@@ -2,6 +2,6 @@ cabal-version: 3.14
 name: diagrams-intro
 version: 0.1.0.0
 executable diagrams-intro
-  main-is: diagrams-intro.hs
+  main-is: diagrams-intro.lhs
   build-depends: base, diagrams-lib, diagrams-svg, random, colour
   default-language: Haskell2010

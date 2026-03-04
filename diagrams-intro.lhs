@@ -15,7 +15,7 @@ First we define the base case, which is an equilateral triangle one unit high, w
 
 Next we define some transformations on diagrams that have the same outline as baseTri.
 
-The combineTris function combines two input diagrams shaped like baseTri into a result shaped like baseTri. It does this by shearing and scaling both triangles, then reflecting the second triangle, as shown.
+The combineTris function combines two input diagrams shaped like baseTri into a result shaped like baseTri. It does this by shearing and scaling both triangles, then reflecting the second triangle. The boundary between them runs from the lower-left corner to a point on the opposite side that is defined by `proportion`. (`proportion` should be between 0 and 1.)
 
 > combineTris :: Double -> Diagram B -> Diagram B -> Diagram B
 > combineTris proportion diagram1 diagram2 = 
